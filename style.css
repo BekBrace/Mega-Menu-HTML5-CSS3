@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url(showcase.jpg) no-repeat center center / cover;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+body .container #navbar {
+  /* socialive blue */
+  background: #06beb6;
+  /* 50 shades of grey */
+  /* background-image: linear-gradient(to top right, #bdc3c7, #2c3e50); */
+  /* Frost */
+  /* background-image: linear-gradient(to top right, #000428, #004e92); */
+  opacity: 0.9;
+  z-index: 5;
+}
+
+.container {
+  text-align: center;
+  z-index: 1;
+}
+.container ul {
+  display: inline-flex;
+  list-style: none;
+  padding: 10px;
+}
+.container ul li {
+  padding: 15px 30px;
+  margin: 4px;
+}
+
+.container ul li > a {
+  color: rgb(240, 224, 1);
+  font-size: 1rem;
+  font-weight: bold;
+  z-index: 5;
+  text-decoration: none;
+}
+
+.active-btn,
+.container ul li:hover {
+  background: teal;
+  /* border-radius: 1rem; */
+}
+
+.container i {
+  margin-right: 8px;
+  background: rgb(12, 87, 79);
+  border-radius: 50%;
+  padding: 8px;
+  display: inline;
+}
+
+.sub {
+  display: none;
+}
+
+.container ul li:hover .sub {
+  display: block;
+  position: absolute;
+  background: #06beb6;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+/* display block list elements in ul */
+.container ul li:hover .sub ul {
+  display: block;
+  margin: 10px;
+}
+
+/* setting of menu */
+.container ul li:hover .sub ul li {
+  width: 200px;
+  padding: 10px;
+  border-bottom: 1px solid teal;
+  text-align: left;
+  background: transparent;
+  border-radius: 0;
+}
+
+/* remove last line from first menu */
+.container ul li:hover .sub ul li:last-child {
+  border-bottom: none;
+}
+
+.container ul li:hover .sub ul li a:hover {
+  color: teal;
+  font-weight: bold;
+}
+
+.fa-angle-right {
+  float: right;
+  color: rgb(240, 224, 1);
+  background: transparent !important;
+}
+
+.sub2 {
+  display: none;
+  cursor: pointer;
+  color: rgb(240, 224, 1);
+  font-size: 1rem;
+  font-weight: bold;
+  z-index: 5;
+}
+
+li .hover:hover .sub2 {
+  display: block;
+  position: absolute;
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 140px;
+  background-color: #06beb6;
+}
+.sub2 ul li:hover {
+  color: teal;
+  font-weight: bolder;
+}
